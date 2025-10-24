@@ -83,8 +83,8 @@ int main() {
     pthread_create(&thread1, NULL, process1, NULL);
     pthread_create(&thread2, NULL, process0, NULL);
     pthread_create(&thread3, NULL, process1, NULL);
-    pthread_create(&thread2, NULL, process0, NULL);
-    pthread_create(&thread3, NULL, process2, NULL);
+    // pthread_create(&thread2, NULL, process0, NULL);
+    // pthread_create(&thread3, NULL, process2, NULL);
 
     // Wait for threads to finish
     pthread_join(thread0, NULL);
