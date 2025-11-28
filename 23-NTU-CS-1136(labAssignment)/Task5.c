@@ -24,7 +24,7 @@ void* check_student(void* arg) {
     printf("\nStudent ID: %d\nName: %s\nGPA: %.2f\n", s->student_id, s->name, s->gpa);
 
     if (s->gpa >= 3.5) {
-        printf("Status: Eligible for Dean’s List ✅\n");
+        printf("Status: Eligible for Dean's List ✅\n");
         pthread_mutex_lock(&lock);
         deanCount++;
         pthread_mutex_unlock(&lock);

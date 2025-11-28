@@ -40,6 +40,6 @@ for (int i = 0; i < 4; i++) {
         free(threadSum);          //Free memory allocated in thread
     }
 
-    printf("\nTotal sum of all threads = %d\n", totalSum); //print the total sum
+    printf("\nTotal sum of all threads = %d\n", totalSum); // print the total sum
     return 0;
 }

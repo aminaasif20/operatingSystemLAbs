@@ -25,16 +25,16 @@ void* factorial(void* arg) {
 int main() {
     pthread_t thread;
     int num;
-    unsigned long long* fact_result;
+    unsigned long long* result;
 
     printf("Enter a number: ");
     scanf("%d", &num);
 
     pthread_create(&thread, NULL, factorial, &num);
-    pthread_join(thread, (void**)&fact_result);
+    pthread_join(thread, (void**)&result);
 
-    printf("Factorial of %d is %llu\n", num, *fact_result);
-    free(fact_result);
+    printf("Factorial of %d is %llu\n", num, *result);
+    free(result);
 
     return 0;
 }
